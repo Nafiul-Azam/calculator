@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 260px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* "Nafiul" এর জন্য এনিমেটেড স্টাইল */
+.animated-name {
+  display: inline-block;
+  animation: colorChange 2s infinite;
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  text-align: right;
+  padding-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #003f7f;
+}
+
+/* রঙ পরিবর্তনের জন্য এনিমেশন */
+@keyframes colorChange {
+  0% {
+    color: #ff0000;
+  } /* লাল */
+  25% {
+    color: #00ff00;
+  } /* সবুজ */
+  50% {
+    color: #0000ff;
+  } /* নীল */
+  75% {
+    color: #ff00ff;
+  } /* গোলাপি */
+  100% {
+    color: #ff0000;
+  } /* লাল */
+}
